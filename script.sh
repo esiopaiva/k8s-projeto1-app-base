@@ -13,9 +13,9 @@ docker push esiodesync/projeto-database:1.0
 
 echo "Criando os serviços do cluster Kubernetes ......"
 
-kubectl apply -f ./services.yml
+kubectl apply -f . services.yml
 
 
 echo "Realizando o Deployment......"
 
-kubectl apply -f ./deployment.yml
+kubectl apply -f . deployment.yml
