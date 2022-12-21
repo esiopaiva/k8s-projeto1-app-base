@@ -4,11 +4,12 @@ metadata:
   name: mysql-dados
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
+  storageClassName: standard-rwo
   resources:
     requests:
-      storage: 30Gi
-    storageClassName: standard-rwo
+      storage: 10Gi
+   
 
 ---
 apiVersion: app/v1
